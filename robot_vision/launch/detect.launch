@@ -1,0 +1,9 @@
+<launch>
+  <!-- Include talker.launch -->
+  <include file="$(find realsense2_camera)/launch/rs_rgbd.launch"/>
+
+
+  <node name="shape_detection" pkg="robot_vision" type="demo.py" output="screen" />
+
+
+</launch>
